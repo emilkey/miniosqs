@@ -12,3 +12,4 @@ deploy:
   file: miniosqs
   on:
     repo: emilkey/miniosqs
+    tags: true
