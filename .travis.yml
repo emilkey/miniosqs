@@ -1,7 +1,14 @@
 language: go
 go:
-  - 1.13.x
+- 1.13.x
 dist: bionic
 script:
-  - go test -v ./cmd/
-  - go build -o miniosqs ./cmd
+- go test -v ./cmd/
+- go build -o miniosqs ./cmd
+deploy:
+  provider: releases
+  api_key:
+    secure: R8KR+ILsy6u19kgO1Q4qvM5274RXsX/VpMQflJcRacedlfscOVpcNvVzGboRG6Pwk3HT/A3uQUsUBNyPbB3iphBpwcY8x5rRWcdl6f0yuoJ03CdiJ5ugXeC4gW7s4Q+WYjfZgi5hCr9zQhivAK77INEIaqsa+D56cugzhj4Gd/5Bks7Bir5z1eceKlPD7nkF4svTikj/EEZVYbh9xAMGCtCLlb8ZphYIrfR3l9WiCubxJntii61HqwT5CNy+YmmHynt+i2mH7Cora2eEKxM8kbHTlZP0BzlS+z0nc6AvjuJd1pJBanWaphXC/aQHLJ/We2JZfpdiM5Vv18F/h8qalpVYwgmsocDW6uqptM+SWS5PKNL+V85q7UDzVd7w1KNMwVE6UWQvMDs/Zz8uDxOoD4+e36v7p55g/lfQgqxIi3HYgR2GcYkWCsB4BANA1+wBE8/JuBvnz3kxT4g2Fv7d2R9gPXQ2AlrWI/4a7RAp0sV5EBuCx/h4qFQtMYBVo1u2ynzJUlQCwkIWxmSDfe1AmWBF9JlIyoRYAYeptZ+ktcQ3PK/aB+GO7HgQjvmmC+9oqssz+uQIWp9BZBi9O7qy/Bxq2ryeeDi0Sew64u7bqgjoMWI5P/LOtv2OvbKoFV3OO1Nm/KzxiTftUmJK/zDWjKCLrNVbyXiN2xqTeSbC78I=
+  file: miniosqs
+  on:
+    repo: emilkey/miniosqs
