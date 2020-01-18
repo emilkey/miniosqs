@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/emilkey/miniosqs.svg?branch=master)](https://travis-ci.org/emilkey/miniosqs)
 # MinioSQS
 
 MinioSQS is a small utility that uses [MinIO](https://github.com/minio/minio) and [ElasticMQ](https://github.com/softwaremill/elasticmq) to enable local testing of systems that use [AWS S3 event notifications](https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html).
