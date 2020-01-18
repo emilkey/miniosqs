@@ -4,3 +4,4 @@ go:
 dist: bionic
 script:
   - go test -v ./cmd/
+  - go build -o miniosqs ./cmd
