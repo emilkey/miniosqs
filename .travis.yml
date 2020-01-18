@@ -1,0 +1,6 @@
+language: go
+go:
+  - 1.13.x
+dist: bionic
+script:
+  - go test -v ./cmd/
